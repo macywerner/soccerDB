@@ -12,7 +12,7 @@ db_ops = db_operations()
 # Uses st.cache to only rerun when the query changes or after 10 min.
 @st.cache(ttl=600)
 
-rows = db_ops.run_query("SELECT * from country;")
+row = db_ops.run_query("SELECT * from country;")
 
 # Print results.
 st.write(f"{row[0]}")
