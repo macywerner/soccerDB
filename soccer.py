@@ -15,7 +15,7 @@ db_ops = db_operations()
 def countryQuery():
     queryPlay = '''
     SELECT *
-    from country;
+    FROM country;
     '''
 
     countries = db_ops.run_query(countryQuery)
