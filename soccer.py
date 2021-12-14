@@ -9,8 +9,6 @@ st.markdown("Welcome, fan! Here you can search through European tournaments from
 # Uses st.cache to only run once.
 #@st.cache(allow_output_mutation=True, hash_funcs={"_thread.RLock": lambda _: None})
 
-st.dataframe(df.head())
-
 
 
 # Perform query.
@@ -27,7 +25,7 @@ def countryQuery():
 
     return(countries)
 
-
+results = countryQuery
 # Print results.
 #st.write(f"{row[0]}")
-st.write(countryQuery)
+st.write(f"{results[0]})
