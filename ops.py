@@ -15,6 +15,6 @@ class db_operations():
         self.connection.commit()
         print("query executed..")
 
-    def run_query(query):
+    def run_query(self,query):
         self.cursor.execute(query)
         return self.cursor.fetchall()
