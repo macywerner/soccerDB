@@ -21,9 +21,13 @@ def countryQuery():
 
     countries = db_ops.run_query(countryQuery)
 
+    st.writes(countries)
+
     return(countries)
 
 
 # Print results.
 #st.write(f"{row[0]}")
-st.write(f"{countryQuery}")
+#st.write(f"{countryQuery}")
+
+countryQuery()
