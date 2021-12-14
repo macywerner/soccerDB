@@ -1,11 +1,12 @@
 import streamlit as st
 from ops import db_operations
 
+db_ops = db_operations()
+
 # Initialize connection.
 # Uses st.cache to only run once.
-@st.cache(allow_output_mutation=True, hash_funcs={"_thread.RLock": lambda _: None})
+#@st.cache(allow_output_mutation=True, hash_funcs={"_thread.RLock": lambda _: None})
 
-db_ops = db_operations()
 
 
 # Perform query.
