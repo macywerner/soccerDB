@@ -9,6 +9,8 @@ st.markdown("Welcome, fan! Here you can search through European tournaments from
 # Uses st.cache to only run once.
 #@st.cache(allow_output_mutation=True, hash_funcs={"_thread.RLock": lambda _: None})
 
+st.dataframe(df.head())
+
 
 
 # Perform query.
