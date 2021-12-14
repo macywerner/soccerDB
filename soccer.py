@@ -21,12 +21,8 @@ def countryQuery():
     FROM country;
     '''
 
-    countries = db_ops.run_query(countryQuery)
-
-    return(countries)
-
-results = countryQuery
+countries = db_ops.run_query(countryQuery)
 # Print results.
 #st.write(f"{row[0]}")
-for row in results:
+for row in countries:
     st.write(f"{row[0]}")
