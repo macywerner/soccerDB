@@ -21,7 +21,7 @@ def countryQuery():
 
     countries = db_ops.run_query(countryQuery)
 
-    st.writes(countries)
+    st.write(countries)
 
     return(countries)
 
