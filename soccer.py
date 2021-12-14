@@ -3,6 +3,8 @@ from ops import db_operations
 
 db_ops = db_operations()
 
+st.title("Futbol Fans Tournament Database")
+st.markdown("Welcome, fan! Here you can search through European tournaments from 1872 to now.")
 # Initialize connection.
 # Uses st.cache to only run once.
 #@st.cache(allow_output_mutation=True, hash_funcs={"_thread.RLock": lambda _: None})
