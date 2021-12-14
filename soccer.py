@@ -28,4 +28,5 @@ def countryQuery():
 results = countryQuery
 # Print results.
 #st.write(f"{row[0]}")
-st.write(f"{results[0]}")
+for row in results:
+    st.write(f"{row[0]}")
