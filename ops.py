@@ -18,3 +18,10 @@ class db_operations():
     def run_query(self,query):
         self.cursor.execute(query)
         return self.cursor.fetchall()
+
+    def single_attribute(self,query):
+        self.cursor.execute(query)
+        results = self.cursor.fetchall()
+        #results = [i[0] for i in results]
+        #results.remove(None) -- throws errors
+        return results

@@ -17,11 +17,11 @@ st.markdown("Welcome, fan! Here you can search through European tournaments from
 
 def countryQuery():
     queryPlay = '''
-    SELECT *
+    SELECT Name
     FROM country;
     '''
 
-countries = db_ops.run_query(countryQuery)
+countries = db_ops.single_attribute(countryQuery)
 # Print results.
 #st.write(f"{row[0]}")
 for row in countries:
