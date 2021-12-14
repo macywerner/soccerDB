@@ -26,4 +26,4 @@ def countryQuery():
 
 # Print results.
 #st.write(f"{row[0]}")
-st.write(countryQuery)
+st.write(f"{countryQuery}")
