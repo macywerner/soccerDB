@@ -8,7 +8,7 @@ def init_connection(self):
     self.connection = mysql.connector.connect(**st.secrets["mysql"])
     self.cursor = self.connection.cursor()
 
-conn = init_connection(self)
+conn = init_connection()
 
 # Perform query.
 # Uses st.cache to only rerun when the query changes or after 10 min.
